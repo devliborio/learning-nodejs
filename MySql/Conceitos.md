@@ -65,3 +65,10 @@
 > Para especificar uma consulta no MYSQL usamos essa estrutura de comando (WHERE)
 >
 >       SELECT * FROM <nome da tabela> WHERE <nome da coluna> = <valor que deseja buscar>;
+>
+> Para deletar um registro em uma tabela especifica usamos este comando:
+>
+>       DELETE FROM <nome da tabela> WHERE <nome da coluna> = <conteudo da coluna>;
+> - OBS: Sempre use o WHERE pois sem ele pode ter o risco de você deletar uma tabela inteira, então sempre use o WHERE para dar uma condição
+>
+>
