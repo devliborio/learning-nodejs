@@ -68,6 +68,10 @@
 
 * O arquivo package.json fala TUDO sobre seu projeto e tbm fala quais biblioteas estão instaladas nele.
 
+! Express.JS
+
+* Para instalar esse framework (super biblioteca) no seu projeto basta usar este comando: npm install express --save (o '--save' é um comando de instalação do NPM que vai salvar os arquivos do express na sua pasta do seu projeto.)
+
 ! É estreitamente recomendado que instalemos o nodemon para que quando houver qualquer alteração no código do nosso servidor, ele automaticamente reinicie o servidor para aplicar as alterações.
 
 * Instalamos ele da seguinte forma: npm install nodemon -g (o -g significa que queremos instalar essa biblioteca globalmente.)
