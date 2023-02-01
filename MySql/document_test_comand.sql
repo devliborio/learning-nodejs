@@ -13,4 +13,4 @@ INSERT INTO usuarios(nome, email, idade) VALUES(
 );
 
 -- Comando para selecionar dados de uma tabela
-SELECT * FROM usuarios
+SELECT * FROM usuarios;

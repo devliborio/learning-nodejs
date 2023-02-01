@@ -60,4 +60,4 @@
 >
 > Este comando serve para listar os dados de uma tabela, perceba que colocamos um `*` esse simbolo serve para dizer que queremos listar **TODOS** os dados de uma tabela especifica.
 >
->       SELECT * FROM usuarios
+>       SELECT * FROM usuarios;
