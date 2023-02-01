@@ -51,3 +51,13 @@
 > Agora para visualizarmos a estrutura de uma tabela que já foi criada podemos usar o seguinte comando:
 >
 >       DESCRIBE <nome da tabela>
+>
+> Agora para inserir algum dado dentro da tabela usamos este tipo de comando:
+>
+> Para inserir dados precisamos passar o nome da tabela onde dentro do nome vamos dizer quais campos vamos inserir esses valores novos que vamos criar, e depois de dizer quais campos, fazemos o comando `VALUES` que é onde colocaremos **RESPECTIVAMENTE** nossos valores que serão inseridos.
+>
+>       INSERT INTO <nome da tabela>(<campo1>,<campo2>,<campo3>) VALUES(<x-campo1>,<y-campo2>,<z-campo3>)
+>
+> Este comando serve para listar os dados de uma tabela, perceba que colocamos um `*` esse simbolo serve para dizer que queremos listar **TODOS** os dados de uma tabela especifica.
+>
+>       SELECT * FROM usuarios
