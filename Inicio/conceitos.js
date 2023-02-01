@@ -58,6 +58,12 @@
 
 * Em torno de todo o Curso de Formação Node.js vamos ultilizar o framework Express.JS, por ser mais robusto, popular, simples e facil de se construir aplicaões web backend com node.
 
+! Oque é NPM?
+
+* Basicamente significa Node Package Manager (Gerenciador de Pacotes do Node)
+
+* Sempre que você instala o Node.JS o NPM vem junto, mas para checar se realmente está instalado na sua maquina digite npm -v e ele retornara a versão de NPM se instalado.
+
 ! É FORMETEMENTE RECOMENDADO QUE AO COEMÇAR UM PROJETO NODE, VOCÊ DIGITE NA LINHA DE COMANDO (NPM INIT), FAZENDO ISSO VC VAI INICIAR UM PROJETO NODE.JS (NPM), fazemos isso porque é mais facil gerenciar instalação de bibliotecas no projeto.
 
 * O arquivo package.json fala TUDO sobre seu projeto e tbm fala quais biblioteas estão instaladas nele.
