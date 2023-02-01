@@ -12,20 +12,27 @@ app.get("/blog", function(req,res){
 });
 
 app.get("/canal/youtube", function(req,res){
-    res.send("Bem vindo ao meu canal!")
+    res.send("Bem vindo ao meu canal!");
 });
 
 app.get("/ola/:nome", function(req,res){
-    // REQ => DADOS ENVIADOS PELO USUARIO
-    // RES => RESPOSTA QUE VAI SER ENVIADA PARA O USUARIO.
+    // * REQ => DADOS ENVIADOS PELO USUARIO
+    // * RES => RESPOSTA QUE VAI SER ENVIADA PARA O USUARIO.
     var nome = req.params.nome
     res.send("<h1>Oi " + nome + "</h1>");
 })
 
+app.get("/lugar/:empresa/:endereco", function(req,res){
+    var empresa = req.params.empresa;
+    var endereco = req.params.endereco;
+    res.send("Voce é da " + empresa + " do " + endereco);
+})
+// * Aqui estamos criando multiplos parâmetros e devolvendo os mesmos dados que o usuário requisitou na URL como resposta no document da pagina.
+
 app.listen(2001,function(erro){ // * Essa função que estamos criando é executada toda vez que o servidor é iniciado e ela recebe um parâmetro chamado "erro" então se ocorrer algum erro a gente recebe esse parâmetro.
     if(erro){
-        console.log("Ocorreu algum erro!")
+        console.log("Ocorreu algum erro!");
     } else{
-        console.log("Servidor Rodando Normalmente")
+        console.log("Servidor Rodando Normalmente");
     }
 })
