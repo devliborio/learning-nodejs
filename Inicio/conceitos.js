@@ -29,9 +29,9 @@
 
 ! O que é HTTP?
 
-* Imagine que em um certo dia um certo usuario chamado jonas tem um certo da trabalho da faculdade pra fazer, ai Jonas vai até o google e faz uma pesquisa, ele pesquisa sobre o trabalho dele no google e o google retorna essa pesquisa pra ele.
+* Imagine que em um dia um certo usuario chamado Jonas tem um trabalho da faculdade pra fazer, ai Jonas vai até o google e faz uma pesquisa, ele pesquisa sobre o trabalho dele no google e o google retorna essa pesquisa pra ele.
 
-* VOCE JA PAROU PRA PENSAR COMO É POSSIVEL QUE JONAS EM CASA ATRAVÉS DE UMA PESQUISA CONSEGUE SE CONECTAR COM O SERVIDOR DA GOOGLE?
+* VOCE JA PAROU PRA PENSAR COMO É POSSIVEL QUE JONAS EM CASA ATRAVÉS DE UMA PESQUISA CONSIGA SE CONECTAR COM O SERVIDOR DA GOOGLE?
 
 * O Jonas só consegue se conectar com o servidor da google atraves de um cara chamado **HTTP**
 
