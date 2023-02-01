@@ -27,6 +27,17 @@ app.get("/lugar/:empresa/:endereco", function(req,res){
     res.send("Voce é da " + empresa + " do " + endereco);
 }) // * Aqui estamos criando multiplos parâmetros e devolvendo os mesmos dados que o usuário requisitou na URL como resposta no document da pagina.
 
+app.get("/deep/:login?/:senha?", function(req,res){
+    var login = req.params.login
+    var senha = req.params.senha
+
+    if(login && senha){
+        res.send("O seu login é: " + login + "<br>" + "A sua senha é: " + senha + "<br><br>" + "<h4>Bem vindo ao culto...</h4>")
+    } else {
+        res.send("<h4>Você é um interditado</h4>")
+    }
+}) // * Estamos criando um rota para aprender a utilização de parâmetros não obrigatorios, nele mesmo se você não passar os parâmetros a rota ainda continua ativa e não depende exclusivamente deles para funcionar
+
 app.listen(2001,function(erro){ 
     if(erro){
         console.log("Ocorreu algum erro!");
