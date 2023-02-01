@@ -4,3 +4,13 @@ CREATE TABLE usuarios(
     email VARCHAR(100),
     idade INT(3)
 );
+
+-- Inserindo dados em uma tabela
+INSERT INTO usuarios(nome, email, idade) VALUES(
+ "Guilherme Libório Machado",
+ "email@teste.com",
+ 21
+);
+
+-- Comando para selecionar dados de uma tabela
+SELECT * FROM usuarios
