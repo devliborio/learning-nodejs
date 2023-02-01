@@ -47,4 +47,7 @@
 > - Para criar outras colunas dentro da tabela é só usar a virgula `,`
 >
 >       CREATE TABLE( coluna_a VARCHAR(50), coluna_b VARCHAR(100), coluna_c INT() );
-    
+>
+> Agora para visualizarmos a estrutura de uma tabela que já foi criada podemos usar o seguinte comando:
+>
+>       DESCRIBE <nome da tabela>
