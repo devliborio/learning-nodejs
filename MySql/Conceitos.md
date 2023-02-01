@@ -22,9 +22,11 @@
 >
 >       SHOW DATABASES;
 >
+>
 > Comando que  serve para criar um banco de dados no seu MYSQL:
 >
 >       CREATE DATABASE <nome do seu banco>;
+>
 >
 > Comando que serve para que você possa acessar qualquer banco de dados no MYSQL:
 >
@@ -34,6 +36,15 @@
 >
 >       SHOW TABLES;
 >
-> Comando que serve para criar tabelas dentro do seu banco de dados
+> Comando que serve para criar tabelas dentro do seu banco de dados.
 >
->       CREATE TABLE;
+> - Onde dentro dos parenteses vamos criar as colunas dessa tabela. 
+>
+> - Primeiro criamos o seu nome e depois o tipo dessa coluna. 
+>
+> - Após escolher o tipo da coluna podemos definir o número de caracteres maximo que queremos aceitar dentro da tabela.
+>
+> - Para criar outras colunas dentro da tabela é só usar a virgula `,`
+>
+>       CREATE TABLE( coluna_a VARCHAR(50), coluna_b VARCHAR(100), coluna_c INT() );
+    
