@@ -72,3 +72,6 @@
 > - OBS: Sempre use o WHERE pois sem ele pode ter o risco de você deletar uma tabela inteira, então sempre use o WHERE para dar uma condição
 >
 >
+> Atualizando registros em uma tabela especifica
+>
+>       UPDATE <nome da tabela> SET <nome da coluna> = <conteudo novo da coluna> WHERE <nome da coluna> = <conteudo da coluna>;
