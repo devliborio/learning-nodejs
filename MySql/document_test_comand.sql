@@ -14,3 +14,6 @@ INSERT INTO usuarios(nome, email, idade) VALUES(
 
 -- Comando para selecionar dados de uma tabela
 SELECT * FROM usuarios;
+
+-- Especificando uma consulta no MYSQL
+SELECT * FROM usuarios WHERE idade = 21;
