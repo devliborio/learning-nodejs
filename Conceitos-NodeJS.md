@@ -112,3 +112,17 @@
 > Caso queira um orbigatorio use: 
 >
 >       /rota/:parametro 
+
+### EJS (Embedded JavaScript templating)
+>
+> É um template engine que serve para renderizar códigos HTML no Node.JS.
+>
+> Para criar um arquivo EJS primeiramente você precisa criar uma pasta chamada `views` no diretório raiz do seu projeto, só pode ser essa pasta porque é a pasta padrão que o Node.JS busca os arquivos HTML / EJS. Agora dentro dele criar seus arquivos com a extensão `.ejs`
+>
+> Agora para carregar o `EJS` no seu arquivo Node.JS você precisa usar a seguinte linha de código:
+>
+>       app.set("view engine","ejs"); 
+>
+> Agora para lincar isso no seu arquivo principal Node, provalvelmente `index.js` você tem que puxar ele dentro de uma rota isso é obvio, entretanto normalmente para enviarmos uma resposta para o usuario usamos o parâmetro `res.send` só que para enviarmos nosso código `.ejs` usamos a seguinte estrutura de envio `res.render` já que ele é um renderizador afinal. Entretanto não basta somente issi, você agora precisa sinalizar qual arquivo você quer chamar, agora fica facil é só usar essa estrutura de código:
+>
+>       res.render("<nomedoseuarquivo>");
