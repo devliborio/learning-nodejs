@@ -113,6 +113,8 @@
 >
 >       /rota/:parametro 
 
+---
+
 ### **EJS (Embedded JavaScript templating)**
 >
 > É um template engine que serve para renderizar códigos HTML no Node.JS.
@@ -151,3 +153,19 @@
 >               <%= itemArray.nomePrincipal0 %>
 >               <%= itemArray.nomePrincipal1 %> 
 >       <% }) %>
+>
+
+---
+
+### **Manipulando arquivos estaticos no ExpressJS**
+>
+> Arquivos estaticos são arquivos que o backend não processa como imagens, css, códigos javascript do frontend
+>
+> Agora tem uma forma de processarmos isso, e para manipular arquivos estaticos no ExpressJS é bem simples, no seu arquivo principal do Node basta vc definir a seguinte linha de comando:
+>
+>     app.use(express.static("public"));
+>
+> Note que um padrão adotado pela comunidade é criar a pasta `public` no diretório do seu projeto.
+
+---
+
