@@ -123,6 +123,6 @@
 >
 >       app.set("view engine","ejs"); 
 >
-> Agora para lincar isso no seu arquivo principal Node, provalvelmente `index.js` você tem que puxar ele dentro de uma rota isso é obvio, entretanto normalmente para enviarmos uma resposta para o usuario usamos o parâmetro `res.send` só que para enviarmos nosso código `.ejs` usamos a seguinte estrutura de envio `res.render` já que ele é um renderizador afinal. Entretanto não basta somente issi, você agora precisa sinalizar qual arquivo você quer chamar, agora fica facil é só usar essa estrutura de código:
+> Agora para lincar isso no seu arquivo principal Node, provalvelmente `index.js` você tem que puxar ele dentro de uma rota isso é obvio, entretanto normalmente para enviarmos uma resposta para o usuario usamos o método `res.send()` só que para enviarmos nosso código `.ejs` usamos o seguinte método de envio `res.render()` já que ele é um renderizador afinal. Entretanto não basta somente isso, você agora precisa sinalizar qual arquivo você quer chamar, agora fica fácil é só usar essa estrutura de código:
 >
 >       res.render("<nomedoseuarquivo>");
