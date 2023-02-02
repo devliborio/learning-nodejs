@@ -154,7 +154,16 @@
 >               <%= itemArray.nomePrincipal1 %> 
 >       <% }) %>
 >
-
+>
+> Agora vamos falar sobre reutilizar HTML com **Partials** usando EJS.
+>
+> Para usa-lo é recomendado que você crie uma pasta `partials` na sua pasta `views` onde você criará um arquivo para cada pedaço de HTML que você irá reutilizar.
+>
+> E nessa pasta você vai criar os arquivos para qual iram receber os pedaços do código que você quer salvar como por exemplo: `header.ejs` `footer.ejs` `navbar.ejs` `form.ejs`
+>
+> E após criado seus compenentes que são nada mais que pedações do seu código você pode importar eles para onde você quiser da seguinte forma:
+>
+>   <%- include( 'partials/nomedoarquivo.ejs' ) %>
 ---
 
 ### **Manipulando arquivos estaticos no ExpressJS**
