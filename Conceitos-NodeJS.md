@@ -178,3 +178,52 @@
 
 ---
 
+### **Sequelize para Bancos de dados com Node.JS**
+>
+> A melhor maneira de se trabalhar com bancos de dados com Node.JS é usando uma biblioteca chamada `Sequelize`.
+>
+> Com o `Sequelize` você consegue fazer qualquer tipo de manipulação no seu banco de dados SQL.
+>
+> O `Sequelize` faz todo o processo de conexão, manipulação do banco de dados tudo dentro do Node.js, então atraves de códigos JS você consegue manipular seu banco de dados.
+>
+> Deixendo o processo de conversão de códigos JS para o `Sequelize` porque ele iria pegar eses códigos e converter para o formato SQL automaticamente.
+>
+> Entendido para que serve o `Sequelize` vamos ver como é feita a instalação dele. Basicamente você só precisa executar esse comando para instalar essa biblioteca no seu projeto, abra ele no seu terminal de comando e execute:
+>
+>       npm install --save sequelize
+>
+> Entretando o sequelize depende de outra biblioteca para funcionar corretamente, então após executar o comando acima, utilize o seguinte:
+>
+>       npm install --save mysql2
+>
+> Para criar iniciar uma conexão `Sequelize` com MYSQL precisamos seguir alguns passos dentro do seu editor de código:
+>
+> - Primeiro crie um banco de dados no seu MYSQL.
+>
+> - Agora crie uma pasta no seu projeto chamada `database`
+>
+> - Crie um arquivo `.js` de conexão com o nome que preferir `nomedoarquivo.js`
+>
+> - Agora importe o `Sequelize` para esse arquivo usando este padrão de código:
+>
+>       const Sequelize = require("sequelize");
+>
+> - E vamos criar a conexão de fato agora, é bem simples:
+>
+>       const conection = new Sequelize("nomeDoBanco","usuarioRoot","senhaDoBanco",{host: 'ondeEstaOSeuBanco', dialect: 'qualOTipoDeBanco'});
+>       
+> - Agora exporte a conexão para usar no seu projeto:
+>
+>       module.exports = conection;
+>
+> Agora vamos entender como podemos autenticar essa conexão no Node.JS e novamente vamos seguir uns passos para entender como realizar essa verificação:
+>
+> - Primeiro abra seu editor de código e navegue até sua arquivo principal `index.js` 
+>
+> - Após isso importe a conexão que foi feita acima
+>
+>       const conection = require("./database/conection");
+>
+> - Agora vamos criar o código de autenticação
+>
+>       conection.authenticate().then(() =>{ console.log("Conexão feita no banco de dados!"); }).catch((msgErro) =>{ console.log(msgErro); });
