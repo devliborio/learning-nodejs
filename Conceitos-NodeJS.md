@@ -227,3 +227,13 @@
 > - Agora vamos criar o código de autenticação
 >
 >       conection.authenticate().then(() =>{ console.log("Conexão feita no banco de dados!"); }).catch((msgErro) =>{ console.log(msgErro); });
+>
+> Caso sua autenticação falhe e retorne no console o seguinte erro `Client does not support authentication protocol requested by server; consider upgrading MySQL client` você deve seguir os seguinte passos para solucionar o problema:
+>
+> - Abra seu MySQL workbench e vá até `Create New SQL file`
+>
+> - Após fazer isso você vai executar esse código abaixo:
+>
+>       ALTER USER 'root'@'host' IDENTIFIED mysql_native_password BY 'yourPassword'
+>
+> Vamos entender o que esse código está fazendo, basicamente ele está **alterando o modo de autenticação criptografado do usuario root do seu servidor MySQL para uma autenticação de senha plana (sua senha atual)**.
