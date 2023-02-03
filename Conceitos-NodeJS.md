@@ -237,3 +237,41 @@
 >       ALTER USER 'root'@'host' IDENTIFIED mysql_native_password BY 'yourPassword'
 >
 > Vamos entender o que esse código está fazendo, basicamente ele está **alterando o modo de autenticação criptografado do usuario root do seu servidor MySQL para uma autenticação de senha plana (sua senha atual)**.
+>
+><br>
+>
+> #### **Model** 
+>
+> Para criar uma tabela no Node.JS usando javascript usamos um padrão chamado `model`, um `model`  é um arquivo `.js` que é criado dentro da pasta `database` que recebe códigos javascript para criar uma tabela, para gerar isso vamos seguir esse passo a passo:
+>
+> - Primeiro crie seu arquivo com o padrão de letra maiuscula na primeira letra para ser legivel que isso se trata de um `model`.
+>
+> - Após isso vamos começar a codar:
+>
+>   * Importe o sequelize no seu arquivo
+>
+>          const Sequelize = require("sequelize");
+>
+>   * Agora vamos importar a conexão com o banco de dados
+>
+>           const conection = require("suaconexao");
+>
+>   * Feito isso vamos criar a tabela com JS
+>
+>           const Nomedaconst = conection.define('nomeDaTabela',{ nomeDaColuna:{ type: Sequelize.TIPODACOLUNA, allowNull: false }, nomeDaColuna:{ type: Sequelize.TIPODACOLUNA, allowNull: false } });
+>
+> Perceba que é bem simples, uma observação é que esse `allowNull: false` serve para que o usuário não consiga enviar o formulario em branco.
+>
+> - Depois de feito isso basta abaixo do código acima fazer o seguinte:
+>
+>   * Execute esse código código para sincronizar o código feito acima no banco de dados
+>
+>           Nomedaconst.sync({force: false});
+>
+> Esse `force: false` significa que ele não ira forçar a criação da tabela caso ela já exista.
+>
+>  - Agora para executar TUDO isso que acabamos de fazer devemos realizar o seguinte:
+>
+>       * Importar o model para o `index.js` do seu projeto
+>
+>               const Nomedaconst = require("./database/ArquivoModel.js");
