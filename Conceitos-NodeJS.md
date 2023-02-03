@@ -163,7 +163,7 @@
 >
 > E após criado seus compenentes que são nada mais que pedações do seu código você pode importar eles para onde você quiser da seguinte forma:
 >
->   <%- include( 'partials/nomedoarquivo.ejs' ) %>
+>       <%- include( 'partials/nomedoarquivo.ejs' ) %>
 ---
 
 ### **Manipulando arquivos estaticos no ExpressJS**
