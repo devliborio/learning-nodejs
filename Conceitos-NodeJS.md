@@ -242,7 +242,7 @@
 >
 > #### **Model** 
 >
-> Para criar uma tabela no Node.JS usando javascript usamos um padrão chamado `model`, um `model`  é um arquivo `.js` que é criado dentro da pasta `database` que recebe códigos javascript para criar uma tabela, para gerar isso vamos seguir esse passo a passo:
+> Para criar uma tabela no Node.JS usando javascript usamos um padrão chamado `model` que é uma representação da sua tabela como um OBJETO javascript, um `model` é um arquivo `.js` que é criado dentro da pasta `database` que recebe códigos javascript para criar uma tabela, para gerar isso vamos seguir esse passo a passo:
 >
 > - Primeiro crie seu arquivo com o padrão de letra maiuscula na primeira letra para ser legivel que isso se trata de um `model`.
 >
