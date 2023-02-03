@@ -264,9 +264,11 @@
 >
 > - Depois de feito isso basta abaixo do código acima fazer o seguinte:
 >
->   * Execute esse código código para sincronizar o código feito acima no banco de dados
+>   * Execute esses códigos para sincronizar o código feito acima no banco de dados
 >
 >           Nomedaconst.sync({force: false});
+>
+>           module.exports = Nomedaconst;
 >
 > Esse `force: false` significa que ele não ira forçar a criação da tabela caso ela já exista.
 >
@@ -275,3 +277,6 @@
 >       * Importar o model para o `index.js` do seu projeto
 >
 >               const Nomedaconst = require("./database/ArquivoModel.js");
+
+---
+
