@@ -116,7 +116,7 @@
 ---
 
 ### **EJS (Embedded JavaScript templating)**
->
+
 > É um template engine que serve para renderizar códigos HTML no Node.JS.
 >
 > Para criar um arquivo EJS primeiramente você precisa criar uma pasta chamada `views` no diretório raiz do seu projeto, só pode ser essa pasta porque é a pasta padrão que o Node.JS busca os arquivos HTML / EJS. Agora dentro dele criar seus arquivos com a extensão `.ejs`
@@ -167,7 +167,7 @@
 ---
 
 ### **Manipulando arquivos estaticos no ExpressJS**
->
+
 > Arquivos estaticos são arquivos que o backend não processa como imagens, css, códigos javascript do frontend
 >
 > Agora tem uma forma de processarmos isso, e para manipular arquivos estaticos no ExpressJS é bem simples, no seu arquivo principal do Node basta vc definir a seguinte linha de comando:
@@ -179,7 +179,7 @@
 ---
 
 ### **Sequelize para Bancos de dados com Node.JS**
->
+
 > A melhor maneira de se trabalhar com bancos de dados com Node.JS é usando uma biblioteca chamada `Sequelize`.
 >
 > Com o `Sequelize` você consegue fazer qualquer tipo de manipulação no seu banco de dados SQL.
@@ -277,6 +277,45 @@
 >       * Importar o model para o `index.js` do seu projeto
 >
 >               const Nomedaconst = require("./database/ArquivoModel.js");
-
 ---
 
+### **VPS (Servidor virtual privado)** 
+
+> É basicamente um computador que você aluga e tem total controle dele, você pode fazer basicamente o que quiser.
+>
+> Entretando ele é um servidor que é voltado principalmente para hospedagem de aplicações.
+>
+> Diferente de uma **`hospedagem compartilhada`** que é mais enchuta e não deixa você ter liberdade, a vps te da total controle do que você deseja usar na seu máquina virtual.
+---
+
+### Aprendendo Deploy 
+
+> Use uma plataforma de VPS da sua escolha no caso sempre opito pela digital ocean
+>
+> Apois isso se cadastre siga todos financeiros e depois quando for criar sua vps você escolhe a região mais perto de você, e chega na parte de autenticação, chegando nessa parte você moralmente como um praticante de tecnologia escolha a opção SSH para gerar sua autenticação
+>
+> para gerar sua chave ssh é bem simples, faça esse comandos no seu terminal
+>
+>       ssh-keygen
+>
+> Vai aparecer uma janela para que você confirme o caminho para onde vão ficar as duas chaves tanto a publica quanto a privada
+>
+>       Generating public/private rsa key pair. Enter file in which to save the key (/Users/USER/.ssh/id_rsa):
+>
+> Após aparecer isso você aperta `ENTER`
+>
+> Depois de feito isso vai ter outro retorno pedindo pra vocẽ cadastra uma `passphrase` e vocẽ cria.
+>
+> Após isso já esta feito e basta você copiar o conteudo do arquivo onde está armazenada a chave pública assim:
+>
+>       cat ~/.ssh/id_rsa.pub
+>
+> E para a chave privada:
+>
+>       cat ~/.ssh/id_rsa
+>
+> Agora entenda como funciona a relação de chave publica e chave privada:
+>
+>       Imagine um cadeado, um cadeado tem o corpo dele em si e tambem tem a chave, digamos que você chega na sua cas e tem lá um cadeado na sua porta, bom vocẽ está vendo o cadeado exposto, porem pra você abrir o cadeado vocẽ precisa de uma chave que só você tem, então quando você coloca a chave no corpo do cadeado você consegue abrir ele.
+>
+>       Agora entendo melhor isso no caso do SSH, é como se o corpo do cadeado fosse a chave publica e a chave a chave privada.
