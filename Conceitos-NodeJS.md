@@ -319,3 +319,14 @@
 >       Imagine um cadeado, um cadeado tem o corpo dele em si e tambem tem a chave, digamos que você chega na sua cas e tem lá um cadeado na sua porta, bom vocẽ está vendo o cadeado exposto, porem pra você abrir o cadeado vocẽ precisa de uma chave que só você tem, então quando você coloca a chave no corpo do cadeado você consegue abrir ele.
 >
 >       Agora entendemdo melhor isso no caso do SSH, é como se o corpo do cadeado fosse a chave publica e a chave a chave privada.
+---
+
+### **Biblioteca pm2 no Node.js para rodar projetos em background**
+
+> Primeiro instale ela globalmente independente de qualquer projeto:
+>
+>       npm install -g pm2
+>
+> Agora vcoê deve iniciar seu arquivo `index.js` dessa forma:
+>
+>       pms start index.js
