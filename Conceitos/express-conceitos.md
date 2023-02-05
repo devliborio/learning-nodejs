@@ -23,3 +23,15 @@
 > O que é um router?
 >
 > `Router()` é um método do expressjs que permite você a criar rotas em arquivos diferentes do `index.js` que é o arquivo principal 
+>
+> Saiba que você precisa exportar essas rotas para usar no seu arquivo principal `index.js`
+>
+>       module.exports = var
+>
+> Para importar ela no seu arquivo principal também é bem simples
+>
+>       const controller = require("./<pasta>/controller.js") 
+>
+> E para usar vocẽ precisar usar a instancia do express juntamente do método use
+>
+>       app.use("prefixo",controller); -> Para usar a rota sem prefixo, use somente a "/"
