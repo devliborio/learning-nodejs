@@ -1,8 +1,4 @@
-<p>
-    <h2 align="center">Conceitos MYSQL</h2>
-</p>
-
-### **Conexão em Servidor (CMD)**
+### **Conexão em Servidor (Terminal)**
 >
 > Para se conectar em um servidor é preciso seguir essa sintaxe de comando
 >
