@@ -17,3 +17,9 @@
 >
 > Note que um padrão adotado pela comunidade é criar a pasta `public` no diretório do seu projeto.
 ---
+
+### **Router**
+
+> O que é um router?
+>
+> `Router()` é um método do expressjs que permite você a criar rotas em arquivos diferentes do `index.js` que é o arquivo principal 
