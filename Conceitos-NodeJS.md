@@ -329,4 +329,4 @@
 >
 > Agora vcoê deve iniciar seu arquivo `index.js` dessa forma:
 >
->       pms start index.js
+>       pm2 start index.js
