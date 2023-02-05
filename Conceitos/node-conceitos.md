@@ -66,3 +66,14 @@
 > Instalamos ele da seguinte forma: npm install `nodemon -g` (o `-g` significa que queremos instalar essa biblioteca globalmente.)
 > Depois de instalar o nodemon, é recomendado que iniciemos o servidor usando `nodemon <nome do arquivo>.js`
 ---
+### Arquitetura e Organização de aplicação Node.js
+
+> Organização por dominios (partes diferentes), vamos organizar o arquivo principal da nossa aplicação em dominios.
+>
+> Por exemplo eu teria uma pasta onde eu iria guardar todos meus arquivos relacionados a **login** e outra pasta com todos os arquivos relacionados a **painel administrativo**, até que fossem criadas todas as pastas para fundamentar o nosso arquivo principal.
+>
+> Esse é o tipo de organização mais comum que você vai achar no nodejs.
+>
+> **O que é um controller?**
+>
+> Controller é o nome do arquivo que a gente vai dá onde vai ficar toda a nossa lógica da nossa aplicação, onde vão ficar nossas rotas.
