@@ -66,7 +66,7 @@
 > Instalamos ele da seguinte forma: npm install `nodemon -g` (o `-g` significa que queremos instalar essa biblioteca globalmente.)
 > Depois de instalar o nodemon, é recomendado que iniciemos o servidor usando `nodemon <nome do arquivo>.js`
 ---
-### Arquitetura e Organização de aplicação Node.js
+### **Arquitetura e Organização de aplicação Node.js**
 
 > Organização por dominios (partes diferentes), vamos organizar o arquivo principal da nossa aplicação em dominios.
 >
