@@ -14,10 +14,29 @@
 >
 > O HTTP funciona basciamente como transferencia de dados atraves de requisições e respostas.
 ---
-### Estrutura de um servidor HTTP no Node.js
+### **Estrutura de um servidor HTTP no Node.js**
 
 >       var http = require("http");
 >
 >       http.createServer(function(req,res),{ res.end("resposta ao cliente") }).listen(<porta>);
 >
 >       console.log("Meu servidor está rodando!")
+---
+### **Verbos HTTP**
+
+> São formas de dizer como que você deseja fazer uma requisição ao servidor, basicamente são formas diferentes de você realizar uma requisição.
+>
+> Agora irei listar os 5 Verbos HTTP mais utilizados:
+>
+> - **GET** (Retornar dados de um servidor, usado em links e da suporte a cache).
+>
+> - **POST** (Criar novos itens no servidor, usado em formularios). 
+>
+> - **PUT** (Serve para atualizar completamente algum dado, usado em formularios).
+>
+> - **PATCH** (Ele é parecido com o PUT mas só vai atualizar algo parcialmente, uma caracteristica especifica do item, por exemplo tem um produto em uma loja em vez de atualizar o produto inteiro, você atualiza somente o preço, mas o nome e as outras caracteristicas continuam as mesmas, usado geralmente me formularios).
+>
+> - **DELETE** (Serve basciamente para deletar itens no servidor usado em formularios e links).
+---
+
+
