@@ -81,6 +81,8 @@
 ### **API**
 
 > É meio que um sotware ou biblioteca que serve para permitir que alguma coisa se comunique com outra coisa, então podemos dizer que API é uma camada de comunicação, é uma interface de comunicação entre uma ou mais coisas.
+>
+> Um exemplo disso é a API do youtube, que ao você se comunicar com ela, ela retorna por exemplo uma listagem de videos, ou listagem de canais do youtube, ou até se comunicar com ela para realizar uploads de videos que estão no seu sistema para o site do youtube.
 ---
 ### **Status Code**
 
@@ -93,3 +95,11 @@
 ### **Web Services**
 
 > É basicamente uma API que roda na Web, e funciona através do protocolo HTTP.
+>
+> Então podemos definir um API que roda na web como um **web service**.
+>
+> Sendo assim, ele serve para prover uma camada de comunicação com outras coisas, por exemplo:
+>
+> - Um aplicativo android se comunicando com um serviço de pagamento do pagseguro.
+>
+> - Um jogo que está rodando no Xbox-one se comunicando com uma API do youtube ou API da twitch.
