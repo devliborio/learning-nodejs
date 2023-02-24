@@ -103,3 +103,41 @@
 > - Um aplicativo android se comunicando com um serviço de pagamento do pagseguro.
 >
 > - Um jogo que está rodando no Xbox-one se comunicando com uma API do youtube ou API da twitch.
+---
+### **REST**
+
+> Antes de definir REST, é bom entedermos que antes de existir ele os web services não tinha pradronização, logo se você tivesse um sistema e quisesse implementar um web service nele, você teria que estudar o padrão do mesmo e configurar seu sistema para conseguir implementar esse mesmo web service, o problema é que cada web service tinham padrões diferentes.
+>
+> Então entendido isso, o REST é basicamente um padrão de desenvolvimento de web services.
+>
+> Dito isso o padrão de arquitetura REST tem algumas regras para ser criado:
+>
+> - Deve seguir a arquitetura **Cliente Servidor** (O REST não pode ser cliente e servidor ao mesmo tempo).
+>
+> - **Statles** (Significa que você não deve guardar estado do cliente, ou seja se o cliente te manda uma requisição pra sua API REST você pega essa requisição, responde e esqueçe o cliente, então você não deve guardar dados daquela requisição no seu sistema).
+>
+> - **Cacheável** (Pra uma API ser REST ela tem que ter a possibilidade de permitir cache, então em algumas situações você vai precisar fazer cache de informações na sua API, o cache basicamente serve para que você possa economizar dados de processamento do seu servidor, é algo voltado pro desempenho, entretanto a maioria das API convencionais não trabalham com esse sistema de cache).
+>
+> - **Saber trabalhar com camadas** (Isso significa que não importa se você colocar um proxy, um firewall, um middleware ou qualquer outra coisa entre a requisição(cliente) e a resposta(API) a sua API vai pouco se importar se tem algo entre ele e o cliente, ela só vai funcionar como ela deve funcionar).
+>
+> - Interface uniforme e direta (As rotas da sua API tem que ser uniforme e direta, para ser mais pratico vamos entender esses exemplos abaixo)
+>
+>   * **Interface não uniforme:** 
+>       
+>           https://meusite.com/getCliente/todos
+>           https://meusite.com/deletarClientes/peloId/1
+>           https://meusite.com/clientes/peloId/1
+>           https://meusite.com/editar/clientes/peloId/2
+>          
+>          Essa é a forma incorreta de você declarar seus endpoints(rotas) em uma API REST.
+>
+>   * **Interface uniforme:** 
+>       
+>          GET = https://meusite.com/clientes
+>          DELETE = https://meusite.com/cliente/1
+>          GET = https://meusite.com/cliente/1
+>          PUT = https://meusite.com/cliente/2
+>
+>          Já essa é a forma correta e uniforme de se estruturar rotas na sua API REST, a diferença pra os não uniformes é que ultilizamos os verbos (get, delete, put, patch).
+>
+> Falando agora sobre os tipos de retorno REST, podemos ver que diferente do padrão SOAP que só tem possibilidade de retornar em .xml o REST retorna em mais diversidade de tipos como: .json, .xml, .pdf, .png / .jpg e diversos outros tipos de arquivos.
