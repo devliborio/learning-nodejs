@@ -78,6 +78,10 @@
 >
 > Controller é o nome do arquivo que a gente vai dá onde vai ficar toda a nossa lógica da nossa aplicação, onde vão ficar nossas rotas.
 ---
+### **API**
+
+> É meio que um sotware ou biblioteca que serve para permitir que alguma coisa se comunique com outra coisa, então podemos dizer que API é uma camada de comunicação, é uma interface de comunicação entre uma ou mais coisas.
+---
 ### **Status Code**
 
 > Serve basicamente o que ocorreu na sua requisição, se ela foi bem sucedida, se teve algum erro, se ela ficou coo não autorizada e etc.
@@ -87,3 +91,5 @@
 > <a href="https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP">Clique aqui para ver uma lista de todos os status codes.</a>
 ---
 ### **Web Services**
+
+> É basicamente uma API que roda na Web, e funciona através do protocolo HTTP.
