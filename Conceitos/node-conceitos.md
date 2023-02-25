@@ -2,7 +2,7 @@
 
 > É um interpretador JavaScript, que roda fora dos navegadores. (LADO DOS SERVIDORES)  
 >
->* Com o JS rodando fora dos navegadores é possivel:
+>* Com o JS rodando fora dos navegadores é possível:
 >
 >    * 1 - Criar aplicações moveis
 >    * 2 - Criar aplicações WEB com o backend
@@ -12,11 +12,11 @@
 ### **Porque usar Node.JS?**
 
 > * Muito leve.
-> * Muito rapido.
-> * Muito facil
+> * Muito rápido.
+> * Muito fácil
 > * Usa Javascript.
 > * tem um dos maiores ecossistemas do mundo.
-> * está sendo ultilizazdo fortemente no mercado.
+> * está sendo utilizado fortemente no mercado.
 ---
 ### **Onde ele é usado?**
 
@@ -24,28 +24,28 @@
 > * PayPal
 > * Uber
 ---
-### **O que são modulos?**
+### **O que são módulos?**
 
 > Nada mais é do que pedaços do seu programa
 >
 > - Para que eles servem?
 >
->   * Ele serve para separar o seu código em varios arquivos.
->   * Ele também serve para utlilizar algumas bibliotecas.
+>   * Ele serve para separar o seu código em vários arquivos.
+>   * Ele também serve para utilizar algumas bibliotecas.
 ---
-### **O que são parametros em rotas?**
+### **O que são parâmetros em rotas?**
 
-> Parametros são formas de passar valores dinamicos diretos na sua rota.
+> Parâmetros são formas de passar valores dinâmicos diretos na sua rota.
 >
-> Observações que ao atribuir uma parametro a uma rota, você só consegue acessar essa rota acompanhamdo o parametro junto a ela.
+> Observações que ao atribuir uma parâmetro a uma rota, você só consegue acessar essa rota acompanhando o parâmetro junto a ela.
 >
-> Para adicionar um parâmetro não obrigatorio use está sintaxe: 
+> Para adicionar um parâmetro não obrigatório use está sintaxe: 
 >
->       /rota/:parametro?  
+>       /rota/:parâmetro?  
 >
-> Caso queira um orbigatorio use: 
+> Caso queira um obrigatório use: 
 >
->       /rota/:parametro 
+>       /rota/:parâmetro 
 ---
 ### **Oque é NPM?**
 
@@ -54,9 +54,9 @@
 > Sempre que você instala o Node.JS o NPM vem junto, mas para checar se realmente está instalado na sua maquina digite `npm -v` e ele retornara a versão de NPM se instalado.
 >
 > É fortemente recomendado que ao começar um projeto Node.JS, você digite na linha de comando `npm init`, fazendo isso você vai iniciar um projeto Node.JS (NPM). 
-> Fazemos isso porque é mais facil gerenciar instalação de bibliotecas no projeto.
+> Fazemos isso porque é mais fácil gerenciar instalação de bibliotecas no projeto.
 >
-> O arquivo `package.json` fala **TUDO** sobre seu projeto e tbm fala quais biblioteas estão instaladas nele.
+> O arquivo `package.json` fala **TUDO** sobre seu projeto e tbm fala quais bibliotecas estão instaladas nele.
 ---
 ### **Nodemon**
 
@@ -68,7 +68,7 @@
 ---
 ### **Arquitetura e Organização de aplicação Node.js**
 
-> Organização por dominios (partes diferentes), vamos organizar o arquivo principal da nossa aplicação em dominios.
+> Organização por domínios (partes diferentes), vamos organizar o arquivo principal da nossa aplicação em domínios.
 >
 > Por exemplo eu teria uma pasta onde eu iria guardar todos meus arquivos relacionados a **login** e outra pasta com todos os arquivos relacionados a **painel administrativo**, até que fossem criadas todas as pastas para fundamentar o nosso arquivo principal.
 >
@@ -80,9 +80,9 @@
 ---
 ### **API**
 
-> É meio que um sotware ou biblioteca que serve para permitir que alguma coisa se comunique com outra coisa, então podemos dizer que API é uma camada de comunicação, é uma interface de comunicação entre uma ou mais coisas.
+> É meio que um software ou biblioteca que serve para permitir que alguma coisa se comunique com outra coisa, então podemos dizer que API é uma camada de comunicação, é uma interface de comunicação entre uma ou mais coisas.
 >
-> Um exemplo disso é a API do youtube, que ao você se comunicar com ela, ela retorna por exemplo uma listagem de videos, ou listagem de canais do youtube, ou até se comunicar com ela para realizar uploads de videos que estão no seu sistema para o site do youtube.
+> Um exemplo disso é a API do YouTube, que ao você se comunicar com ela, ela retorna por exemplo uma listagem de videos, ou listagem de canais do YouTube, ou até se comunicar com ela para realizar uploads de videos que estão no seu sistema para o site do YouTube.
 ---
 ### **Status Code**
 
@@ -100,13 +100,13 @@
 >
 > Sendo assim, ele serve para prover uma camada de comunicação com outras coisas, por exemplo:
 >
-> - Um aplicativo android se comunicando com um serviço de pagamento do pagseguro.
+> - Um aplicativo android se comunicando com um serviço de pagamento do PagSeguro.
 >
-> - Um jogo que está rodando no Xbox-one se comunicando com uma API do youtube ou API da twitch.
+> - Um jogo que está rodando no Xbox-one se comunicando com uma API do YouTube ou API da twitch.
 ---
 ### **REST**
 
-> Antes de definir REST, é bom entedermos que antes de existir ele os web services não tinha pradronização, logo se você tivesse um sistema e quisesse implementar um web service nele, você teria que estudar o padrão do mesmo e configurar seu sistema para conseguir implementar esse mesmo web service, o problema é que cada web service tinham padrões diferentes.
+> Antes de definir REST, é bom entendermos que antes de existir ele os web services não tinha padronização, logo se você tivesse um sistema e quisesse implementar um web service nele, você teria que estudar o padrão do mesmo e configurar seu sistema para conseguir implementar esse mesmo web service, o problema é que cada web service tinham padrões diferentes.
 >
 > Então entendido isso, o REST é basicamente um padrão de desenvolvimento de web services.
 >
@@ -114,7 +114,7 @@
 >
 > - Deve seguir a arquitetura **Cliente Servidor** (O REST não pode ser cliente e servidor ao mesmo tempo).
 >
-> - **Statles** (Significa que você não deve guardar estado do cliente, ou seja se o cliente te manda uma requisição pra sua API REST você pega essa requisição, responde e esqueçe o cliente, então você não deve guardar dados daquela requisição no seu sistema).
+> - **Statles** (Significa que você não deve guardar estado do cliente, ou seja se o cliente te manda uma requisição pra sua API REST você pega essa requisição, responde e esquece o cliente, então você não deve guardar dados daquela requisição no seu sistema).
 >
 > - **Cacheável** (Pra uma API ser REST ela tem que ter a possibilidade de permitir cache, então em algumas situações você vai precisar fazer cache de informações na sua API, o cache basicamente serve para que você possa economizar dados de processamento do seu servidor, é algo voltado pro desempenho, entretanto a maioria das API convencionais não trabalham com esse sistema de cache).
 >
@@ -138,6 +138,22 @@
 >          GET = https://meusite.com/cliente/1
 >          PUT = https://meusite.com/cliente/2
 >
->          Já essa é a forma correta e uniforme de se estruturar rotas na sua API REST, a diferença pra os não uniformes é que ultilizamos os verbos (get, delete, put, patch).
+>          Já essa é a forma correta e uniforme de se estruturar rotas na sua API REST, a diferença pra os não uniformes é que utilizamos os verbos (get, delete, put, patch).
 >
 > Falando agora sobre os tipos de retorno REST, podemos ver que diferente do padrão SOAP que só tem possibilidade de retornar em .xml o REST retorna em mais diversidade de tipos como: .json, .xml, .pdf, .png / .jpg e diversos outros tipos de arquivos.
+---
+### **REST OU RESTFUL**
+
+>  Restful é quando você implementa uma API REST seguindo todas as padronizações, todas as regras que citamos acima, geralmente ela é aplicada de API's mais complexas e robustas.. 
+>
+> Porém você também pode criar uma API REST seguindo somente algumas das regras e ainda assim ela será uma API REST, geralmente o modelo mais casual de API's é esse onde você cria uma API REST que segue somente algumas das normas da comunidade.
+>
+> Agora vamos ver o que torna uma API REST em uma API RESTFUL, bom para que ela possa se tornar restful ela precisa passar por alguns níveis, e abaixo irei explicar o que são cada um deles:
+>
+> - O level 0 (Onde toda manipulação do seu WebService está focado em somente um endpoint, em uma única rota, por exemplo você tem uma e-comerce onde em uma rota ele retorna tudo sobre o seu sistema: todos os produtos, todos os fornecedores e etc...)
+>
+> - O level 1 (Onde você divide as coisas em recursos, os recursos são basicamente as entidades da sua API por exemplo: 
+>   
+>       https://meusite.com/clientes -> Clientes é uma entidade (Um recurso)
+>
+>       https://meusite.com/categorias -> Categorias é uma entidade também, basicamente é esse o conceito de recursos.
