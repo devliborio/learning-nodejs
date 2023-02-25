@@ -157,3 +157,10 @@
 >       https://meusite.com/clientes -> Clientes é uma entidade (Um recurso)
 >
 >       https://meusite.com/categorias -> Categorias é uma entidade também, basicamente é esse o conceito de recursos.
+>
+>   * Então para ficar claro a sua API vai ter diversos endpoints(rotas) para cada entidade.
+> ---
+> - O level 2 (É quando você utiliza os verbos http, se você utiliza os verbos http de forma correta, o post para criação de recursos, delete para deletar algo, put para edição, get para enviar dados para o cliente você já está no level 2).
+>
+> - O leve 3 (Hypermedia Controls, também chamado de HATEOAS, que é quando você faz uma requisição para uma API, e além de te retornar os dados, ela retorna uma tabela de links, das ações que eu posso fazer com tal conteúdo, por exemplo nessa tabela vai constar o link da rota que você deve seguir para, deletar, excluir, seguir etc...)
+---
