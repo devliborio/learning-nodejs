@@ -27,22 +27,18 @@ let dados = [
 ]
 
 
-database.insert(dados).into("games").then((data) => {
-    console.log(data);
-}).catch((err) => {
-    console.log(err);
-});
+database.insert(dados).into("games")
+                       .then(data => console.log(data))
+                          .catch(err => console.log(err));
 
 */
 
 
 /*
 //! Usando o comando SELECT com query builder!
-database.select("*").table('games').then((data)=>{
-    console.log(data);
-}).catch((err) => {
-    console.log(err);
-});
+database.select("*").table('games')
+                        .then(data => console.log(data);
+                          .catch(err => console.log(err));
 */
 
 
@@ -65,12 +61,28 @@ let query2 = database.select(["nome", "preco"])
 
 /*
 //! Caso você queira fazer uma query que o knexjs não te dê muita flexibilidade, você pode usar uma função do knex chamada raw que deixa você criar comandos SQL de forma crua, como é demonstrado abaixo:
-database.raw("SELECT * FROM games").then(data => console.log(data)).catch(err => console.log(err));
+database.raw("SELECT * FROM games")
+            .then(data => console.log(data))
+                .catch(err => console.log(err));
 */
 
 
 /*
 //! Usando o comando DELETE com query builder
-let query3 = database.where({id: 12}).delete().table("games").then(data => console.log(data)).catch(err => console.log(err)); 
+let query3 = database.where({id: 12})
+                        .delete()
+                            .table("games")
+                                .then(data => console.log(data))
+                                    .catch(err => console.log(err)); 
 // Se ele retornar 1 é a quantidade de registros que ele deletou!
+*/
+
+
+/*
+//! Usando o comando UPDATE  com query builder
+let query4 = database.where({ id: 14})
+                        .update({ preco: 170 })
+                            .table("games")
+                                .then(data => console.log(data))
+                                    .catch(err => console.log(err));
 */
