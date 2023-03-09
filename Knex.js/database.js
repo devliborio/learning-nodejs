@@ -4,6 +4,8 @@ let knex = require('knex')({
         host: 'localhost',
         user: 'root',
         password: 'root',
-        database: 'test'
+        database: 'knexjs'
     }
 });
+
+module.exports = knex;
