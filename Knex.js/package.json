@@ -9,6 +9,7 @@
   "author": "Guilherme Libório Machado",
   "license": "ISC",
   "dependencies": {
-    "knex": "^2.4.2"
+    "knex": "^2.4.2",
+    "mysql2": "^3.2.0"
   }
 }
