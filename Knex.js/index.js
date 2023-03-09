@@ -110,14 +110,17 @@ database.insert({nome: "Ubisoft",game_id: 15})
                     .catch(err => console.log(err));
 */
 
-
+/*
 //! Usando JOIN para relacionamentos de tabelas
 database.select(["estudios.id as estudio_id", "estudios.nome as estudio_nome", "games.id", "games.nome"]) // O "as" renomeia o campo caso tenha conflito de nomes nas tabelas.
             .table("games")
                 .innerJoin("estudios", "estudios.game_id", "games.id")
                     .then(data => console.log())
-                        .catch(err => console.error(err));  
+                        .catch(err => console.error(err)); 
+*/
 
+
+/*
 //! Usando JOIN com WHERE em relacionamentos de tabelas
 database.select("games.*", "estudios.nome as estudio_nome")
             .table("games")
@@ -125,3 +128,4 @@ database.select("games.*", "estudios.nome as estudio_nome")
                     .where("games.id", 15)
                         .then(data => console.log(data))
                             .catch(err => console.error(err));
+*/
