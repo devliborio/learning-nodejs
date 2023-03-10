@@ -5,3 +5,9 @@
 ### **DOM com o Vue.js**
 
 > O VUE assim como outros frameworks trabalham diretamente ligados ao DOM
+---
+### VUE CLI
+
+> Para poupar tempo de configuração de projetos Vue.js você pode simplesmente instalar o vue cli através do NPM que ele irá facilitar muito toda a parte de configuração de projetos no vue. Execute esse comando abaixo:
+>
+>     npm install -g @vue/cli 
