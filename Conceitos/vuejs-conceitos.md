@@ -11,3 +11,7 @@
 > Para poupar tempo de configuração de projetos Vue.js você pode simplesmente instalar o vue cli através do NPM que ele irá facilitar muito toda a parte de configuração de projetos no vue. Execute esse comando abaixo:
 >
 >     npm install -g @vue/cli 
+>
+> Para criar um projeto usando o VUE CLI basta você ir no prompt de comando e digitar o seguinte comando:
+>
+>     vue create <nome do projeto>
