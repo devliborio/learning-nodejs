@@ -156,3 +156,16 @@ database.select([
                             .then(data => console.log(data))
                                 .catch(err => console.error(err));
 */
+
+//! Trabalhando com Transactions
+async function testeTransacao() {
+    try {
+        await database.transaction(async trans => {
+            await database.insert({nome: "Minecraft", preco: 180}).table("games");
+        });
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+testeTransacao();
