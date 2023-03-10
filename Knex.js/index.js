@@ -6,23 +6,8 @@ const database = require("./database");
 let dados = [
         
         {
-            nome: "Ark survival",
-            preco: 99.99
-        },
-
-        {
-            nome: "Bayonetta",
-            preco: 80
-        },
-
-        {
-            nome: "the forest",
-            preco: 35.45
-        },
-
-        {
-            nome: "Far cry - New Dawn",
-            preco: 26.89
+            nome: "Marvel's Spider-Man",
+            preco: 160
         }
 ]
 
@@ -111,7 +96,7 @@ database.insert({nome: "Ubisoft",game_id: 15})
 */
 
 /*
-//! Usando JOIN para relacionamentos de tabelas
+//! Usando JOIN para relacionamentos 1 para 1 de tabelas
 database.select(["estudios.id as estudio_id", "estudios.nome as estudio_nome", "games.id", "games.nome"]) // O "as" renomeia o campo caso tenha conflito de nomes nas tabelas.
             .table("games")
                 .innerJoin("estudios", "estudios.game_id", "games.id")
@@ -128,4 +113,46 @@ database.select("games.*", "estudios.nome as estudio_nome")
                     .where("games.id", 15)
                         .then(data => console.log(data))
                             .catch(err => console.error(err));
+*/
+
+
+/*
+//! Usando JOIN para relacionamentos 1 para Muitos de tabelas
+database.select(["games.*", "estudios.nome as estudio_nome"])
+            .table("games")
+                .innerJoin("estudios", "estudios.game_id", "games.id")
+                    .where("games.id", 21)
+                        .then((data)=>{
+                            let estudiosGamesArray = data;
+                            let game = {
+                                id: 0,
+                                nome: "",
+                                estudios: []
+                            }
+
+                            game.id = data[0].id;
+                            game.nome = data[0].nome;
+
+                            data.forEach(estudio => {
+                                game.estudios.push({nome: estudio.estudio_nome});
+                            });
+                            console.log(game);
+                        })
+                            .catch(err => console.error(err));
+*/
+
+
+/*
+//! Usando JOIN para relacionamento Muito para Muitos entre tabelas
+database.select([
+        "estudios.nome as estudio_nome",
+        "games.nome as game_nome", 
+        "games.preco"
+])
+            .table("games_estudios")
+                .innerJoin("games", "games.id", "games_estudios.game_id")
+                    .innerJoin("estudios", "estudios.id", "games_estudios.estudio_id")
+                        .where("games.id", 19)
+                            .then(data => console.log(data))
+                                .catch(err => console.error(err));
 */
