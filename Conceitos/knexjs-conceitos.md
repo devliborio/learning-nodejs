@@ -1,4 +1,4 @@
-### O que é o Knex.js?
+### **O que é o Knex.js?**
 
 > O knex.js é basicamente um query builder, que podemos definir por uma ferramenta para construção, manipulação e visualização de consultas sobre o banco de dados.
 >
