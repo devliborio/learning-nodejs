@@ -15,3 +15,7 @@
 > Para criar um projeto usando o VUE CLI basta você ir no prompt de comando e digitar o seguinte comando:
 >
 >     vue create <nome do projeto>
+>
+> Depois de criado seu projeto usando o VUE CLI você pode rodar ele com o comando: 
+>
+>       npm run serve
