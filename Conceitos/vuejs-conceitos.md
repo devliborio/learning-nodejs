@@ -33,8 +33,8 @@
 >
 > - **o Template**: que é basicamente onde você vai escrever código HTML do seu projeto.
 >
-> - **O Script**: Onde você vai escrever a lógica do seu projeto
+> - **O Script**: Onde você vai escrever a lógica do seu projeto, dentro do script sempre você precisara definir o `export default{}` para exportar o seu componente, assim possibilitando que ele seja importado em outro componente do seu projeto.
 >
-> - **O Style**: Onde você vai definir o estilo do seu projeto.
+> - **O Style**: Onde você vai definir o estilo do seu projeto, dentro do Style definimos um atributo chamado `scoped` onde ele define basicamente que as alterações de estilo são especifica só para o componente em questão.
 >
 > Lembrando que essas 3 partes são somente definidas **no componente em questão** que está sendo criado!
