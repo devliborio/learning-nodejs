@@ -38,3 +38,19 @@
 > - **O Style**: Onde você vai definir o estilo do seu projeto, dentro do Style definimos um atributo chamado `scoped` onde ele define basicamente que as alterações de estilo são especifica só para o componente em questão.
 >
 > Lembrando que essas 3 partes são somente definidas **no componente em questão** que está sendo criado!
+---
+### **Interpolação no Vue.js**
+
+> Para usar a interpolação no vue basta definir o simbolo que chama ele que é esse aqui: {{}}
+>
+> E dentro desse simbolo você pode executar quaisquer operações JS dentro do HTML `(<template>)`, entretanto ele é mais utilizado para receber dados de alguma entidade do código, dados que sejam relevantes para  ele, geralmente a estrutura que é criada dentro da tag `(<script>)` do componente é essa aqui:
+>
+>     Data(){
+>       return{
+>         info1: "Gabriel",
+>         info2: 2,    
+>         info3: "M",
+>         info4: 12
+>       }   
+>     }
+
