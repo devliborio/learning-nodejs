@@ -9,8 +9,8 @@
 
     <button type="submit">Assinar!</button>
 
-    <p>Seu e-mail: <span class="email">{{email}}</span> foi recebido com sucesso!</p>
-    <p>Seu e-email2: <span class="email2">{{email2}}</span> foi recebido com sucesso</p>
+    <p v-if="showMsgOk == true"> Seu e-mail: <span class="email">{{email}}</span> foi recebido com sucesso!</p>
+    <p v-show="showMsgOk == true"> Seu e-email2: <span class="email2">{{email2}}</span> foi recebido com sucesso</p>
   </div>
 </template>
 
@@ -25,11 +25,14 @@ export default {
         email2: "v-model@gmail.com"
     };
   },
+
+  props: {
+     showMsgOk: Boolean
+  }
 };
 </script>
 
 <style scoped>
-
     #produtos{
       font-family: sans-serif;
       padding: 1%;

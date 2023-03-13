@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Cliente :nome="nomeDoMelhorCliente" idade="40" profissao="Desenvolvedor Back-end"/>
+    <Cliente :nome="nomeDoMelhorCliente" :idade="40" profissao="Desenvolvedor Back-end"/>
     <hr>
-    <Produto/>
+    <Produto :showMsgOk="true"/>
     <hr>
     <Assinatura/>
   </div>
