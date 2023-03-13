@@ -1,21 +1,27 @@
 <template>
-    <div>
-        <h3>Produto 1 </h3>
-        <p>Descrição do produto etc!etc!etc!etc!</p>
-        <input id="produtos_quantidade" type="Number" placeholder="Quantidade do produto"><br><br>
-        <button type="submit">Comprar</button>
-    </div>
+  <div id="produtos">
+
+    <p>Caso queira ser assinante do nosso plano de membros {{nome}}, você só pagará um preço exclusivo e limitado de <span class="price">${{preco}}</span> sendo na modalidade {{tempo}}</p>
+    <button type="submit">Assinar agora!!</button>
+
+  </div>
 </template>
 
 <script>
 export default {
-    
-}
+  data() {
+    return {
+        nome: "UserHelp Plus+",
+        preco: 50.99,
+        tempo: "mensal"
+    };
+  },
+};
 </script>
 
 <style scoped>
-    #produtos_quantidade {
-        width: 170px;
+    .price{
+        font-weight: bold;
     }
 </style>
 
