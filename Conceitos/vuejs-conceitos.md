@@ -122,4 +122,6 @@
 
 > As diretivas são tags especiais adicionadas ao seu elemento HTML e que lá vai se aplicar algum comportamento especial definido pela função. Ainda não ficou tão claro assim? Na prática termos algumas diretivas tais como: `v-model`, `v-if`, `v-else`, `v-for`, entre outras.
 >
-> Ao definir um `v-if`ou quaisquer outras diretivas temos que se atentar que ao definir uma prop boolean por exemplo ou numérica devemos usar o ":" na frente do atributo para evitar erros de invalid prop pois se passarmos um atributo assim -> `atributo = "true"`, na verdade esse trip é uma string ele não converte para boolean, então devemos usar dessa forma -> `:atributo="true"`
+> Ao definir um `v-if`ou quaisquer outras diretivas temos que se atentar que ao definir uma prop boolean por exemplo, ou numérica devemos usar o ":" na frente do atributo para evitar erros de invalid prop pois se passarmos um atributo assim -> `atributo = "true"`, na verdade esse trip é uma string ele não converte para boolean, então devemos usar dessa forma -> `:atributo="true"`
+>
+> Adendo importante ao usar o `v-if`, ao usar essa diretiva automaticamente se a condição for falsa ele destrói a tag em questão e caso um dia ela venha a ser verdadeira ela será reconstruída, caso seja da opção do desenvolvedor não optar por essa opção, pode-se usar outra diretiva chamada `v-show` que somente mostra ou esconde o elemento usando o atributo `display` do CSS. ( O `v-show` também trabalha com condições. )
