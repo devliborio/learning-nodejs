@@ -117,3 +117,9 @@
 >     }
 >
 >     </script>
+---
+### **Diretivas do Vue.js**
+
+> As diretivas são tags especiais adicionadas ao seu elemento HTML e que lá vai se aplicar algum comportamento especial definido pela função. Ainda não ficou tão claro assim? Na prática termos algumas diretivas tais como: `v-model`, `v-if`, `v-else`, `v-for`, entre outras.
+>
+> Ao definir um `v-if`ou quaisquer outras diretivas temos que se atentar que ao definir uma prop boolean por exemplo ou numérica devemos usar o ":" na frente do atributo para evitar erros de invalid prop pois se passarmos um atributo assim -> `atributo = "true"`, na verdade esse trip é uma string ele não converte para boolean, então devemos usar dessa forma -> `:atributo="true"`
