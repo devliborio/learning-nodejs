@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <h1>VueClientes</h1>
     <Cliente/>
-    <h2>Lista de Produtos</h2>
+    <hr>
     <Produto/>
   </div>
 </template>
