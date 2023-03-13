@@ -77,3 +77,43 @@
 >     <input type="checkbox v-model="<nome da variável>">
 >
 > Com isso as alterações nesse campo vão ser alteradas em tempo real no andamento da aplicação.
+---
+
+### **Props no Vue.js**
+
+> Props é um atributo Vue.js personalizado para passar dados de componentes pais para filhos.
+>
+> Isso é muito importante para lembrar: você não poderá compartilhar dados entre componentes usando props, a menos que sua intenção seja passar os dados de um componente pai para um componente filho.
+>
+> Exemplo de prop:
+>
+>     <template>
+>
+>       <Cliente descricao="Ele é muito bom em Node.js" nome="Guilherme"> 
+>       // Esses atributos dentro da tag componente "Cliente" são as props.
+>
+>     </template>
+>
+>     import Cliente from './components/cliente'
+>
+> Só que não é apenas isso, você também precisa criar um objeto no script do seu componente, onde será definido as variáveis que irão receber os dados vindo da atributo que você definiu no seu componente.
+>
+>     <script> 
+>
+>      exports default { 
+>       data() {
+>
+>           return {
+>              // nome: "Guilherme Libório", | Evite usar nome de variáveis iguais para não ocorrer erro de key duplicated |
+>              idade: 21,
+>              sexo: "Masculino"
+>         }
+>     },
+>           props: { // Aqui você define o nome do atributo e o tipo dele
+>              nome: String,
+>              idade: Number,
+>              sexo: String   
+>        }
+>     }
+>
+>     </script>
