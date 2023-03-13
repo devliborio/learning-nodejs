@@ -15,7 +15,7 @@ export default {
       nome: "Guilherme Libório Machado",
       idade: 21,
       profissao: "Full Stack Developer",
-      numero: 7198666999
+      numero: "(71) 6666-9999"
     };
   },
 };
@@ -30,5 +30,6 @@ export default {
 
   #cliente p{
     font-family: sans-serif;
+    padding: 1%;
   }
 </style>
