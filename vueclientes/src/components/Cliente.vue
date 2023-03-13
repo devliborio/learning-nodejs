@@ -12,12 +12,19 @@ export default {
   // Quando você cria um componente você precisa exportar ele para que ele seja usado em outro componentes se for o seu caso!
   data() {
     return {
-      nome: "Guilherme Libório Machado",
-      idade: 21,
-      profissao: "Full Stack Developer",
       numero: "(71) 6666-9999"
+      // nome: "Guilherme Libório Machado", USADA EM PROPS
+      // idade: 21, USADA EM PROPS
+      // profissao: "Full Stack Developer", USADA EM PROPS
     };
   },
+
+  props: {
+      nome: String,
+      profissao: String,
+      idade: Number
+  }
+
 };
 </script>
 
