@@ -53,4 +53,27 @@
 >         info4: 12
 >       }   
 >     }
+---
+### **Data Binding**
 
+> É uma técnica geral que une duas fontes de dados / informações e as mantém em sincronia em um processo que estabelece uma conexão entre UI da aplicação e a logica de negocio.
+>
+> Existem dois tipos de Data Binding: **One way** e **Two way**.
+>
+> No **One way** você basicamente pega um dado que vem do back-end e liga no front-end, exemplificando para a realidade do vue.js você define uma função `data(){}` no seu script e por exemplo dentro dela retorna uma variável `nome: "Guilherme"`, usando o One way você pode chamar essa variável para dentro de um atributo de um input para formulário usando essa sintaxe aqui:
+>
+>     <input type="text" :value="nome">   // Usando sempre o ":" para que seja possível definir uma variável dentro do atributo.
+>
+>       ou
+>
+>     <input type="text" value="{{nome}}"
+> 
+> Ambas acima são técnicas One way, agora perceba que essa Data Binding é de um caminho só, pois esse serve só para leitura, ele não tem a capacidade de modificar o dado.
+>
+> No **Two way** diferente do One way você tem a capacidade de modificar o dado, porem ele não funciona em todos os atributos, ele tem mais foco em formulários, checkbox, select e etc...
+>
+> Agora para aplicar o Two way data binding é bem simples, em vez de usar o `value=""` dentro do input você vai usar algo chamado `v-model=""` dessa forma:
+>
+>     <input type="checkbox v-model="<nome da variável>">
+>
+> Com isso as alterações nesse campo vão ser alteradas em tempo real no andamento da aplicação.
