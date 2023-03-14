@@ -21,8 +21,8 @@ export default {
         nome: "UserHelp Plus+",
         preco: 50.99,
         tempo: "mensal",
-        email: "liborio.ofc@gmail.com",
-        email2: "v-model@gmail.com"
+        email: "oneway.ofc@gmail.com",
+        email2: "twoway@gmail.com"
     };
   },
 
