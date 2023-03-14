@@ -6,8 +6,9 @@
 
     <div v-for="clienteItem in clientes" :key="clienteItem.id">
         <h5>Edição de cliente</h5>
-        <input type="text" v-model="clienteItem.nome">
-        <input type="text" v-model="clienteItem.profissao"><br><br>
+        <label>Nome:</label><input class="edit_1" type="text" v-model="clienteItem.nome"><br>
+        <label>Word: </label><input class="edit" type="text" v-model="clienteItem.profissao"><br>
+        <label>Idade: </label><input type="text" v-model="clienteItem.idade"><br><br>
         <Cliente :cliente="clienteItem" isPremium="true"/><hr>
     </div>
 
@@ -92,5 +93,9 @@ export default {
 
   .title{
     text-align: center;
+  }
+
+  .edit_1{
+    margin-right: 7px;
   }
 </style>
