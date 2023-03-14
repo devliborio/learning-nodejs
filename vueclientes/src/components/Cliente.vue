@@ -1,42 +1,56 @@
 <template>
-  <div id="cliente">
-    <p> <span class="sp_1"> | QA |: </span> Olá {{ nome }}, seja bem vindo, vimos que sua idade de {{idade}} corresponde a nossas expectativas, ser um {{profissao}} vai muito além de talento! </p>
-    <!-- SIMBOLO DE INTERPOLAÇÃO! -->
-    <hr />
-    <p> <span class="sp_2"> | You |: </span> Muito obrigado pelo retorno, fico muito feliz em agregar para o time, por favor ligue para o meu número {{numero}}, é uma honra ser escolhido por vocês!  </p>
+
+  <div> <!-- classe condicional -->
+      <div :class="{'cliente': !isPremium, 'cliente-premium': isPremium}">
+        <hr>
+        <p>
+          - Nome: {{cliente.nome}}<br><br>
+          - Idade: {{cliente.idade}}<br><br>
+          - Classe: {{cliente.classe}}<br><br>
+          - Profissão: {{cliente.profissao}}
+        </p><hr>
+      </div><br>
   </div>
+
 </template>
 
 <script>
-export default {
-  // Quando você cria um componente você precisa exportar ele para que ele seja usado em outro componentes se for o seu caso!
+export default { // Quando você cria um componente você precisa exportar ele para que ele seja usado em outro componentes se for o seu caso!
   data() {
     return {
       numero: "(71) 6666-9999"
-      // nome: "Guilherme Libório Machado", USADA EM PROPS
-      // idade: 21, USADA EM PROPS
-      // profissao: "Full Stack Developer", USADA EM PROPS
     };
   },
 
   props: {
-      nome: String,
-      profissao: String,
-      idade: Number
+      cliente: Object,
+      isPremium: Boolean // Usando classes condicionais!
   }
 
 };
 </script>
 
 
-<style scoped>
-/*Esse scoped define que esse estilo vai ser aplicado somente para esse componente em especifico e não aos outros da pagina!*/
-  .sp_1, .sp_2{
-    font-weight: bold;
+<style scoped> /*Esse scoped define que esse estilo vai ser aplicado somente para esse componente em especifico e não aos outros da pagina!*/
+  .cliente p{
+    font-family: sans-serif;
+    width: 30%;
+    height: 200px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 
-  #cliente p{
-    font-family: sans-serif;
-    padding: 1%;
+  .title_cliente{
+    text-align: center;
+    background-color: none;
+  }
+
+  .cliente-premium{ /* Classe condicional boolean */
+      background-color: rgb(7, 23, 34);
+      color: rgb(226, 226, 226);
+      width: 30%;
+      height: 200px;
+      padding-top: 10px;
+      padding-left: 10px;
   }
 </style>

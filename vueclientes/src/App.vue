@@ -1,16 +1,20 @@
 <template>
+
   <div id="app">
-    <Cliente :nome="nomeDoMelhorCliente" :idade="40" profissao="Desenvolvedor Back-end"/>
-    <hr>
-    <Produto :showMsgOk="true"/>
-    <hr>
+    
+    <h3 class="title">Clientes do Plano</h3>
+
+    <div v-for="clienteItem in clientes" :key="clienteItem.id">
+        <Cliente :cliente="clienteItem" isPremium="true"/>
+    </div><hr>
+
+    <Produto :showMsgOk="true"/><hr>
     <Assinatura/>
   </div>
+
 </template>
 
 <script>
-
-// Importação de componentes
 import Cliente from './components/Cliente'
 import Produto from './components/Produto'
 import Assinatura from './components/Assinatura'
@@ -18,14 +22,58 @@ import Assinatura from './components/Assinatura'
 export default {
   name: "App",
 
-// Variáveis que são enviadas para os componentes
-  data(){
+  data(){ // Variáveis que são enviadas para os componentes
     return{
-      nomeDoMelhorCliente: "Guilherme Libório Machado" // Definindo variável pela função dat() e passando ela para a prop nome dentro do componente cliente usando data biding one way!!
+
+      clienteGuilherme: { // Definindo variável pela função dat() e passando ela para a prop nome dentro do componente cliente usando data biding one way!!
+        nome: "Guilherme Libório Machado",
+        idade: 21,
+        profissao: "Full Stack Developer",
+        classe: "Premium"
+      }, 
+
+      clientes: [
+
+        {
+          id: 1, // Key
+          nome: "Eunício Gonçalves",
+          email: "euni_alves@gmail.com",
+          idade: 54,
+          profissao: "Master of JavaScript",
+          classe: "Premium"
+        },
+
+        {
+          id: 2, // Key
+          nome: "Flávio Fagundes",
+          email: "viofa_academy@gmail.com",
+          idade: 32,
+          profissao: "Front-end Developer",
+          classe: "Premium"
+        },
+
+        {
+          id: 3, // Key
+          nome: "Fernanda Selva",
+          email: "nanda_selvinha@gmail.com",
+          idade: 19,
+          profissao: "Product Manager",
+          classe: "Premium"
+        },
+
+        {
+          id: 4, // Key
+          nome: "Ricardo Silveira",
+          email: "ric_silveira@gmail.com",
+          idade: 19,
+          profissao: "Back-end Developer",
+          classe: "Premium"
+        }
+
+      ]
     }
   },
 
-// Componentes
   components: {
     Cliente,
     Produto,
@@ -35,5 +83,11 @@ export default {
 </script>
 
 <style scoped>
+  body{
+    background-color: antiquewhite;
+  }
 
+  .title{
+    text-align: center;
+  }
 </style>
