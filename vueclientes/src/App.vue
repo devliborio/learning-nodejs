@@ -32,8 +32,8 @@ export default {
     Assinatura
   }
 }
-
 </script>
 
-<style>
+<style scoped>
+
 </style>
