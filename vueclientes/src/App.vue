@@ -5,8 +5,11 @@
     <h3 class="title">Clientes do Plano</h3>
 
     <div v-for="clienteItem in clientes" :key="clienteItem.id">
-        <Cliente :cliente="clienteItem" isPremium="true"/>
-    </div><hr>
+        <h5>Edição de cliente</h5>
+        <input type="text" v-model="clienteItem.nome">
+        <input type="text" v-model="clienteItem.profissao"><br><br>
+        <Cliente :cliente="clienteItem" isPremium="true"/><hr>
+    </div>
 
     <Produto :showMsgOk="true"/><hr>
     <Assinatura/>
