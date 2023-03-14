@@ -131,3 +131,22 @@
 >      <div v-for="item in array" :key="chave-identificadora"> </div>
 >
 > Agora perceba que para usar o `v-for` você precisa definir outro atributo chamado `key` que serve basicamente como um identificador para diferenciar os itens dentro do array, um adendo é que esse identificador você coloca diretamente dentro do item do array.
+---
+### Eventos no Vue.js
+
+> Os conceitos de eventos no vue.js são basicamente os mesmos do JS nativo, o que muda é a forma de escrita (sintaxe).
+>
+> Quando você define um evento em alguma tag do seu componente, você faz dessa forma:
+>
+>      <button @<tipoDoEvento>="<nomeDoEvento>">Enviar!</button>
+>
+> Após definir isso no seu `>template<` você deve definir os `methods` dentro do seu `Script` com a seguinte estrutura abaixo:
+>
+>        methods: {
+>   
+>           <nomeDoEvento>: Function(){
+>                   // Código que deve se executado
+>           }
+>
+>       }
+---
